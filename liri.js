@@ -81,6 +81,27 @@
 
 //    * You'll use the request package to retrieve data from the OMDB API. Like all of the in-class activities, the OMDB API requires an API key. You may use `trilogy`.
 
+
+// Spotify Section
+
+// var keys = require("./keys.js");
+// var Spotify = require('spotify-web-api-js');
+
+// var songName = "";
+
+// for (var i = 2; i < process.argv.length; i++) {
+//   if (i > 2 && i < process.argv.length) {
+//     songName = songName + " " + process.argv[i];
+//   }
+//   else {
+//     songName += process.argv[i];
+//   }
+// }
+
+// console.log(response)
+
+// movie section
+
 var axios = require("axios");
 
 // Store all of the arguments in an array
@@ -146,15 +167,8 @@ var queryUrl = "https://rest.bandsintown.com/artists/" + artistName + "/events?a
 
 axios.get(queryUrl).then(
   function(response) {
-    console.log("Title: " + response.data.Title);
-    console.log("Release Year: " + response.data.Year);
-    console.log("Rated: " + response.data.Rated);
-    console.log("IMDB Rating: " + response.data.imdbRating);
-    console.log("Country: " + response.data.Country);
-    console.log("Language: " + response.data.Language);
-    console.log("Plot: " + response.data.Plot);
-    console.log("Actors: " + response.data.Actors);
-    console.log("Box Office: " + response.data.BoxOffice);
+    console.log("Title: " + response.data.Band);
+   
   }
 );
 

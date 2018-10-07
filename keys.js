@@ -1,9 +1,11 @@
 
 console.log("this is loaded");
 
-exports.spotify = {
-    id: process.env.SPOTIFY_ID,
-    secret: process.env.SPOTIFY_SECRET
+module.exports = {
+    spotify: {
+        id: "c81078d8cd9947a4a5c4f46e03f9e1bb",
+        secret: "93d43526404f4c6389b681c99b9188bb"
+    }
 };
 
-var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
+// var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
