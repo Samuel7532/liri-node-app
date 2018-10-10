@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Samuel7532/liri-node-app#readme",
   "dependencies": {
     "axios": "^0.18.0",
+    "dotenv": "^6.1.0",
     "node-spotify-api": "^1.0.7",
     "npm": "^6.4.1",
     "request": "^2.88.0"
